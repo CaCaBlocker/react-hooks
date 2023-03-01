@@ -6,3 +6,4 @@
 - [x] useMemo
 - [x] useCallback
 - [x] useRef
+- [x] (additional) Testing By Jest

@@ -104,10 +104,14 @@ function App() {
       <ThemeContext.Consumer>
         {(theme) => (
           <div>
-            <h1>Value: {value}</h1>
+            <h1>Welcome to the course of React Hooks</h1>
+            <h1 data-testid="test-value">Value: {value}</h1>
             <h1>Pow: {pow}</h1>
             <h2>Value ** Pow: {doubleValue}</h2>
-            <button onClick={() => setValue(value + 1)}>
+            <button
+              data-testid="test-button-increment-value"
+              onClick={() => setValue(value + 1)}
+            >
               State Value Increment Update
             </button>
             <button onClick={() => setPow(pow + 1)}>
